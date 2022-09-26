@@ -1,0 +1,12 @@
+- name: "reject CSDN"
+  filter:
+   -  domain-keyword: 'csdn'
+   -  domain-keyword: 'hv168'
+   -  domain-keyword: 'nas589'
+  action:
+       redirect: "https://purefast.net"
+- name: "reject xvideos.com"
+  filter:
+   -  domain-keyword: 'xvideos'
+  action:
+       redirect: "http://52.231.106.32" 
